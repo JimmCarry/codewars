@@ -29,3 +29,10 @@ function shorter_reverse_longer(a,b){
 
 //test function
 //shorter_reverse_longer(a,b);
+
+// solutions of other warriors from codewars what i choose for u and me :)
+// var shorter_reverse_longer = function(a,b) {
+//     var longest = a.length >= b.length ? a : b;
+//     var shortest = a.length >= b.length ? b : a;
+//     return shortest + longest.split('').reverse().join('') + shortest;
+// }
