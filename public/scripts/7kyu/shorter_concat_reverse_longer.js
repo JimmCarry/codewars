@@ -10,19 +10,15 @@
 // const b = 'abcde'
 
 function shorter_reverse_longer(a,b){
-    console.log(a.length)
-    console.log(b.length)
     if (a.length < b.length) {
         let shorter = a;
         let longest = b;
         let longReverse = longest.split('').reverse().join('');
-        console.log(shorter + longReverse + shorter);
         return shorter + longReverse + shorter;
     } else {
         let shorter = b;
         let longest = a;
         let longReverse = longest.split('').reverse().join('');
-        console.log(shorter + longReverse + shorter);
         return shorter + longReverse + shorter;
     }
 }
@@ -30,7 +26,7 @@ function shorter_reverse_longer(a,b){
 //test function
 //shorter_reverse_longer(a,b);
 
-// solutions of other warriors from codewars what i choose for u and me :)
+// solutions of other warriors from codewars what i chose for u and me :)
 // var shorter_reverse_longer = function(a,b) {
 //     var longest = a.length >= b.length ? a : b;
 //     var shortest = a.length >= b.length ? b : a;
