@@ -10,7 +10,16 @@
 // minMax([1])           == [1, 1]
 // Remarks
 // All arrays or lists will always have at least one element, so you don't need to check the length. Also, your function will always get an array or a list, you don't have to check for null, undefined or similar.
-const arr = [1,2,3,4,5];
-let min = Math.min(...arr);
-let max = Math.max(...arr);
-console.log([min,max])
+
+function minMax(arr){
+    let min = Math.min(...arr);
+    let max = Math.max(...arr);
+    return [min,max];
+}
+
+
+
+// solutions of other warriors from codewars what i chose for u and me :)
+// function minMax(arr){
+//     return [Math.min(...arr), Math.max(...arr)];
+// }
