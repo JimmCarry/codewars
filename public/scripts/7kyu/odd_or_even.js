@@ -14,19 +14,32 @@
 // Input: [0, -1, -5]
 // Output: "even"
 // Have fun!
-const array = [2];
+
+// 1. we need take the array and sum of values -> here we can use reduce function
+// 2. after what we summ vuleas, result we must use modulus % for will give the remainder -> simple return even or odd
+// 3. atleast use condition for empty string -> return even if true
 
 const oddOrEven  = ((array) => {
-    const alert = array.reduce((acc, int) =>{
-        return acc += int;
-    })
-
-    if (alert % 2 == 0) {
-        console.log('even number')
+    if (array == '') {
+        return 'even';
     } else {
-        console.log('odd number')
+        const alert = array.reduce((acc, int) =>{
+            return acc += int;
+        })
+
+        if (alert % 2 == 0) {
+            return 'even';
+        } else {
+            return 'odd';
+        }
     }
-    
+
 });
 
-oddOrEven(array)
+
+// solutions of other warriors from codewars what i chose for u and me :)
+// function oddOrEven(arr) {
+//     return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
+//   }
+
+//   const oddOrEven = a => a.reduce((s,n)=> s + n,0)%2 == 0 ? "even" : "odd";
