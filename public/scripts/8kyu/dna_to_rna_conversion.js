@@ -13,3 +13,5 @@ function DNAtoRNA(dna) {
 }
 
 // solutions of other warriors from codewars what i chose for u and me :)
+
+// DNAtoRNA = dna => dna.split('').map( i =>  i == 'T' ? i = 'U' : i).join('');
