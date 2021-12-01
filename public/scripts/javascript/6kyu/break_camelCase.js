@@ -10,3 +10,28 @@ function solution(string) {
 }
 
 // solutions of other warriors from codewars what i chose for u and me :)
+
+// function solution(string) {
+//     string = string.split('').map(function (el) {
+//       if (el === el.toUpperCase()) {
+//         el = ' ' + el
+//       }
+//       return el
+//     })
+//     return string.join('')
+//   }
+
+// function solution(string) {
+//     let final = '';
+
+//     for (let i = 0; i < string.length; i++) {
+//         const char = string[i];
+//         if(char === char.toUpperCase()) {
+//             final += ` ${char}`;
+//         } else {
+//             final += char;
+//         }
+//     }
+
+//     return final;
+// }
