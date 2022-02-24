@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    background-color: #161515;
+  }
+  ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+  }
+  #app {
+    width: 100%;
+    height: 100vh;
+    /* font-family: 'IM Fell English SC', serif; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #fff;
+    background: rgb(29,66,138);
+    background: linear-gradient(90deg, rgba(29,66,138,1) 0%, rgba(200,16,46,1) 85%);
+    font-size: 100%;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    main {
+      display: flex;
+      height: 80%;
+    }
+    footer {
+      height: 20%;
+    }
+  }
+  section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  section img {
+    width: 150px;
+    height: auto;
+  }
+  .admin-panel {
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .admin-panel-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+  .options {  
+      color: #888;
+  }
+  .tabs {
+      overflow: hidden;
+      margin-left: 20px;
+      margin-bottom: -2px;
+  }
+  
+  .tabs ul {
+      list-style-type: none;
+      margin-left: 20px;
+  }
+  
+  .tabs a{
+      float: left;
+      cursor: pointer;
+      padding: 12px 24px;
+      transition: background-color 0.2s;
+      border: 1px solid #ccc;
+      border-right: none;
+      background-color: #f1f1f1;
+      border-radius: 10px 10px 0 0;
+      font-weight: bold;
+  }
+  .tabs a:last-child { 
+      border-right: 1px solid #ccc;
+  }
+  /* OVERLAY */
+  .overlay {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: gray;
+    opacity: 0.9;
+  }
+  /* Change background color of tabs on hover */
+  .tabs a:hover {
+      background-color: #aaa;
+      color: #fff;
+  }
+  
+  /* Styling for active tab */
+  .tabs a.active {
+      background-color: #fff;
+      color: #484848;
+      border-bottom: 2px solid #fff;
+      cursor: default;
+  }
+  .content {
+    color: black;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  .tabcontent {
+      width: 100%;
+      /* border: 1px solid #ccc; */
+      display: flex;
+      flex-direction: column;
+      /* border-radius: 10px; */
+  }
+  .team-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .content input {
+    text-align: center;
+  }
+  
+  .report {
+    padding: 1rem;
+    box-shadow: 1px 1px 3px #161515;
+    background-color: #fff;
+  }
+  .edit p:hover {
+    color: red;
+    cursor: pointer;
+  }
+  .edit i:hover {
+    color: red;
+    cursor: pointer;
+  }
+  .column p {
+    text-align: left;
+  }
+  .title span {
+    display: block;
+    text-align: right;
+  }
+  table {
+    width: 100%;
+  }
+  .disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+    text-shadow: none !important;
+}
+.nba-schedule {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.current-round {
+  img {
+    width: 25px;
+    margin-right: 0.3rem;
+  }
+  .badge {
+    display: flex;
+    font-size: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      width: 100px;
+      margin: 0 1rem;
+    }
+  }
+  .team {
+    display: flex;
+    align-items: center;
+  }
+}
+// ANIMATIONS
+.left-enter-active {
+  animation: leftInAnimation 400ms normal;
+}
+.left-leave-active {
+  animation: leftOutAnimation 400ms normal;
+}
+@keyframes leftInAnimation {
+  from { transform: translateX(150px); }
+  to { transform: translateX(0); }
+}
+@keyframes leftOutAnimation {
+  from { transform: translateX(0); }
+  to { transform: translateX(-150px); }
+}
+
+.right-enter-active {
+  animation: rightInAnimation 400ms normal;
+}
+.right-leave-active {
+  animation: rightOutAnimation 400ms normal;
+}
+@keyframes rightInAnimation {
+  from { transform: translateX(-150px); }
+  to { transform: translateX(0); }
+}
+@keyframes rightOutAnimation {
+  from { transform: translateX(0); }
+  to { transform: translateX(150px); }
+}
