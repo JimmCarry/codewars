@@ -10,7 +10,10 @@
 // should return "found the needle at position 5" (in COBOL "found the needle at position 6")
 
 function findNeedle(haystack) {
-    console.log(haystack)
+    let index = haystack.indexOf('needle');
+    return `found the needle at position ${index}`;
 }
 
-findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false])
+// function findNeedle(haystack) {
+//     return "found the needle at position " + haystack.indexOf("needle");
+//   }
